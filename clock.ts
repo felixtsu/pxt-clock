@@ -48,34 +48,34 @@ namespace clock {
     let isDrawClockIcon: boolean = false
 
     //%blockid=pxtclock_draw_clock block="draw clock %on"
-    //%block.loc.zh-CN = "显示时钟 %on"
+    //%block.loc.zh-CN="显示时钟 %on"
     export function drawClock(on: boolean) {
         isDrawClock = on
     }
     
     //%blockid=pxtclock_current_hour block="current hour"
-    //%block.loc.zh-CN = "现在几点"
+    //%block.loc.zh-CN="现在几点"
     export function currentHour() :number {
         CLOCK_INSTANCE.timeElasped(game.currentScene().millis())
         return CLOCK_INSTANCE.hour
     }
 
     //%blockid=pxtclock_current_hour block="current minute"
-    //%block.loc.zh-CN = "现在几分"
+    //%block.loc.zh-CN="现在几分"
     export function currentMinute(): number {
         CLOCK_INSTANCE.timeElasped(game.currentScene().millis())
         return CLOCK_INSTANCE.minute
     }
 
     //%blockid=pxtclock_draw_clock_icon block="draw clock icon %on"
-    //%block.loc.zh-CN = "显示时钟图标 %on"
+    //%block.loc.zh-CN="显示时钟图标 %on"
     export function drawClockIcon(on: boolean) {
         isDrawClockIcon = on
     }
 
     //%blockid=pxtclock_set_time block="set time to hour %hour, minute %minute || %tickInterval millis for one minute"
     // %tickInterval.defl=60000
-    //%block.loc.zh-CN = "设置时钟 %hour 点 %minute 分 || 以 %tickInterval 毫秒代替一分钟"
+    //%block.loc.zh-CN="设置时钟 %hour 点 %minute 分 || 以 %tickInterval 毫秒代替一分钟"
     export function setTime(hour: number, minute: number, tickInterval: number = 60000) {
         if (!CLOCK_INSTANCE) {
             CLOCK_INSTANCE = new Clock(hour, minute, tickInterval)
