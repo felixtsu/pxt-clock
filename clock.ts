@@ -24,8 +24,8 @@ namespace clock {
         setTimeMinutes: number
 
         constructor(hour: number, minute: number, tickInterval: number) {
-            this.hour = hour
-            this.minute = minute
+            this.hour = (hour + 24) % 24
+            this.minute = (minute + 60) % 60
             this.tickInterval = tickInterval
 
             this.currentTimeMinutes = this.hour * 60 + this.minute
@@ -36,10 +36,10 @@ namespace clock {
 
         timeElasped(currentMillis: number) {
             let deltaMillis = currentMillis - this.setTimeMillis
-            this.currentTimeMinutes = this.setTimeMinutes + deltaMillis * 60 / this.tickInterval
-            this.currentTimeMinutes %= 60 * 24
-            this.hour = this.currentTimeMinutes / 60
-            this.minute = this.currentTimeMinutes % 60
+            this.currentTimeMinutes = this.setTimeMinutes + deltaMillis / this.tickInterval * 60
+            this.currentTimeMinutes = (this.currentTimeMinutes + 60*24 ) % (60 * 24)
+            this.hour = Math.floor(this.currentTimeMinutes / 60)
+            this.minute = Math.floor(this.currentTimeMinutes % 60)
         }
     }
 
@@ -56,14 +56,12 @@ namespace clock {
     //%blockid=pxtclock_current_hour block="current hour"
     //%block.loc.zh-CN="现在几点"
     export function currentHour() :number {
-        CLOCK_INSTANCE.timeElasped(game.currentScene().millis())
         return CLOCK_INSTANCE.hour
     }
 
-    //%blockid=pxtclock_current_hour block="current minute"
+    //%blockid=pxtclock_current_minute block="current minute"
     //%block.loc.zh-CN="现在几分"
     export function currentMinute(): number {
-        CLOCK_INSTANCE.timeElasped(game.currentScene().millis())
         return CLOCK_INSTANCE.minute
     }
 
@@ -73,18 +71,19 @@ namespace clock {
         isDrawClockIcon = on
     }
 
-    //%blockid=pxtclock_set_time block="set time to hour %hour, minute %minute || %tickInterval millis for one minute"
-    // %tickInterval.defl=60000
+
+    
+    //%blockid=pxtclock_set_time 
+    //%block="set time to hour %hour, minute %minute || %tickInterval millis for one minute"
     //%block.loc.zh-CN="设置时钟 %hour 点 %minute 分 || 以 %tickInterval 毫秒代替一分钟"
+    //%tickInterval.defl=60000
     export function setTime(hour: number, minute: number, tickInterval: number = 60000) {
         if (!CLOCK_INSTANCE) {
             CLOCK_INSTANCE = new Clock(hour, minute, tickInterval)
             init()
+        } else {
+            CLOCK_INSTANCE = new Clock(hour, minute, tickInterval)
         }
-
-        CLOCK_INSTANCE.hour = hour
-        CLOCK_INSTANCE.minute = minute
-        CLOCK_INSTANCE.tickInterval = tickInterval
     }
 
     function formatDecimal(val: number) {
