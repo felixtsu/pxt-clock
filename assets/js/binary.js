@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.3","target":"arcade","targetVersion":"1.8.22","repo":"felixtsu/pxt-clock"}
-// total=1228158 new=6.67% cached=87.79% other=5.54%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.8.22/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.4","target":"arcade","targetVersion":"1.8.22","repo":"felixtsu/pxt-clock"}
+// total=1228721 new=6.72% cached=87.75% other=5.54%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -410,7 +410,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P376581(s) {
+function _main___P389488(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -756,28 +756,28 @@ switch (step) {
     s.callLocIdx = 48; s.pc = 30; return s.tmp_0;
   case 30:
     r0 = s.retval;
-    r0 = pxsim.image.ofBuffer(_hex376273);
-    globals.clockIcon___376274 = (r0);
-    globals.isDrawClock___376350 = (false);
-    globals.isDrawClockIcon___376352 = (false);
-    s.tmp_0 = clock_setTime__P376375_mk(s);
+    r0 = pxsim.image.ofBuffer(_hex389178);
+    globals.clockIcon___389179 = (r0);
+    globals.isDrawClock___389273 = (false);
+    globals.isDrawClockIcon___389275 = (false);
+    s.tmp_0 = clock_setTime__P389290_mk(s);
     s.tmp_0.arg0 = 11;
     s.tmp_0.arg1 = 58;
     s.tmp_0.arg2 = 60000;
-    s.callLocIdx = 66; s.pc = 31; return s.tmp_0;
+    s.callLocIdx = 67; s.pc = 31; return s.tmp_0;
   case 31:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-_main___P376581.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P376581.continuations = [  ]
+_main___P389488.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P389488.continuations = [  ]
 
-function _main___P376581_mk(s) {
+function _main___P389488_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P376581, depth: s.depth + 1,
+        parent: s, fn: _main___P389488, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -802,7 +802,7 @@ const _hex363487 = pxsim.BufferMethods.createBufferFromHex("87042000200000000000
 const _hex363489 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000cc00000000000000b0bbbbbbbbcb00c0cd000000000000001bddddddddbd0c1ccd000000000000b011cbccccccbc0c1ccd000000000000b01d6c666666bc0cbccd000000000000b01d6c616661bc0c1ccd000000000000b01d6c161666bccc1bcd000000000000b01d6c666166bcccbbcd000000000000b01d6c666666bccc1bcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666661bcccbbcd000000000000b01d6c666661bccc1bcd000000000000b01d6c666666bc0c1ccd000000000000b01dcbccccccbc0cbccd000000000000c0b1bbbbbbbbbb0cdccb000000000000c0bbbbbbbbbbcb00dc0c00000000000000cccccccccc0c00cc000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex363491 = pxsim.BufferMethods.createBufferFromHex("87042000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004004000000000000000000000000000054450000000000000000000000440b00bbbb00b0440000000000000040550b00000000b0550400000000000040b5000044bb00005b04000000000000b00b0044ddddbb00b00b0000000000000000405d55d5dd0b00000000000000000000d4555555ddbd0000000000000000000054555555d5bd0000000000000000b44055555555d5dd0b4b000000000040b54055555555d5dd0b5b040000000040b54055555555d5dd0b5b040000000000b44055115555d5dd0b4b000000000000000054115555d5bd00000000000000000000d4555555ddbd00000000000000000000405d55d5dd0b0000000000000000b00b0044ddddbb00b00b00000000000040b5000044bb00005b0400000000000040550b00000000b0550400000000000000440b00bbbb00b0440000000000000000000000544500000000000000000000000000004004000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
 const _hex363493 = pxsim.BufferMethods.createBufferFromHex("870420002000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bbbb00000000000000000000000000b055bb00bbbbbb000000000000000000b0b5bdbcbbbbddcb0000000000000000b0dbcb5b5555bbdd0c00000000000000b0cbdcbdbb5b55dbcd0000000000000000c0dddb11d15bb5bd0c00000000000000bbbd111111b155bb0c00000000000000db1b111111115bb5cb00000000000000db1bb11d1199b9d5cb00000000000000db1b11bb9199b955cb000000000000005b1b11b19b99995bcb000000000000005b1d1111bb99995ccb00000000000000b0b511bbbb99995ccb00000000000000b0d51d919999d95b0b00000000000000005bdb919999c9d50b0000000000000000b0d51b99d9bcb5000000000000000000005bd5bbbc550b00000000000000000000b05b5555bd000000000000000000000000b0bbbb00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000")
-const _hex376273 = pxsim.BufferMethods.createBufferFromHex("8704090009000000001011000000000000010001000000001000011000000000010001000100000011110100010000000100000001000000100000100000000000010001000000000010110000000000")
+const _hex389178 = pxsim.BufferMethods.createBufferFromHex("8704090009000000001011000000000000010001000000001000011000000000010001000100000011110100010000000100000001000000100000100000000000010001000000000010110000000000")
 
 
 
@@ -1067,7 +1067,7 @@ function info_inline__P363100_mk(s) {
 
 
 
-function clock_setTime__P376375(s) {
+function clock_setTime__P389290(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1083,15 +1083,15 @@ switch (step) {
       s.arg2 = (s.lambdaArgs[2]);
       s.lambdaArgs = null;
     }
-    r0 = pxsim_numops_toBoolDecr(globals.CLOCK_INSTANCE___376348);
+    r0 = pxsim_numops_toBoolDecr(globals.CLOCK_INSTANCE___389271);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    r0 = pxsim_pxtcore_mkClassInstance(clock_Clock__C376276_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(clock_Clock__C389181_VT);
     s.tmp_2 = r0;
-    s.tmp_3 = clock_Clock_constructor__P376278_mk(s);
+    s.tmp_3 = clock_Clock_constructor__P389183_mk(s);
     s.tmp_3.arg0 = s.tmp_2;
     s.tmp_3.arg1 = s.arg0;
     s.tmp_3.arg2 = s.arg1;
@@ -1099,26 +1099,35 @@ switch (step) {
     s.callLocIdx = 51; s.pc = 3; return s.tmp_3;
   case 3:
     r0 = s.retval;
-    globals.CLOCK_INSTANCE___376348 = (s.tmp_2);
-    s.tmp_0 = clock_init__P376388_mk(s);
+    globals.CLOCK_INSTANCE___389271 = (s.tmp_2);
+    s.tmp_0 = clock_init__P389303_mk(s);
     s.callLocIdx = 52; s.pc = 4; return s.tmp_0;
   case 4:
     r0 = s.retval;
+    { step = 2; continue; }
   case 1:
+    r0 = pxsim_pxtcore_mkClassInstance(clock_Clock__C389181_VT);
+    s.tmp_0 = r0;
+    s.tmp_1 = clock_Clock_constructor__P389183_mk(s);
+    s.tmp_1.arg0 = s.tmp_0;
+    s.tmp_1.arg1 = s.arg0;
+    s.tmp_1.arg2 = s.arg1;
+    s.tmp_1.arg3 = s.arg2;
+    s.callLocIdx = 53; s.pc = 5; return s.tmp_1;
+  case 5:
+    r0 = s.retval;
+    globals.CLOCK_INSTANCE___389271 = (s.tmp_0);
   case 2:
-    r0 = (globals.CLOCK_INSTANCE___376348).fields["hour"] = (s.arg0);
-    r0 = (globals.CLOCK_INSTANCE___376348).fields["minute"] = (s.arg1);
-    r0 = (globals.CLOCK_INSTANCE___376348).fields["tickInterval"] = (s.arg2);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-clock_setTime__P376375.info = {"start":2465,"length":344,"line":78,"column":4,"endLine":87,"endColumn":5,"fileName":"clock.ts","functionName":"setTime","argumentNames":["hour","minute","tickInterval"]}
+clock_setTime__P389290.info = {"start":2436,"length":302,"line":79,"column":4,"endLine":86,"endColumn":5,"fileName":"clock.ts","functionName":"setTime","argumentNames":["hour","minute","tickInterval"]}
 
-function clock_setTime__P376375_mk(s) {
+function clock_setTime__P389290_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_setTime__P376375, depth: s.depth + 1,
+        parent: s, fn: clock_setTime__P389290, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1133,7 +1142,7 @@ function clock_setTime__P376375_mk(s) {
 
 
 
-function clock_init__P376388(s) {
+function clock_init__P389303(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1143,25 +1152,25 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    globals.isDrawClock___376350 = (true);
-    globals.isDrawClockIcon___376352 = (true);
+    globals.isDrawClock___389273 = (true);
+    globals.isDrawClockIcon___389275 = (true);
     s.tmp_0 = scene_createRenderable__P361368_mk(s);
     s.tmp_0.arg0 = 100;
-    s.tmp_0.arg1 = clock_init_inline__P376500;
+    s.tmp_0.arg1 = clock_init_inline__P389412;
     s.tmp_0.arg2 = undefined;
-    s.callLocIdx = 65; s.pc = 1; return s.tmp_0;
+    s.callLocIdx = 66; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-clock_init__P376388.info = {"start":3828,"length":343,"line":119,"column":4,"endLine":131,"endColumn":5,"fileName":"clock.ts","functionName":"init","argumentNames":[]}
+clock_init__P389303.info = {"start":3757,"length":343,"line":118,"column":4,"endLine":130,"endColumn":5,"fileName":"clock.ts","functionName":"init","argumentNames":[]}
 
-function clock_init__P376388_mk(s) {
+function clock_init__P389303_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_init__P376388, depth: s.depth + 1,
+        parent: s, fn: clock_init__P389303, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
 } }
@@ -1170,7 +1179,7 @@ function clock_init__P376388_mk(s) {
 
 
 
-function clock_init_inline__P376500(s) {
+function clock_init_inline__P389412(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1180,45 +1189,45 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.currentMillis___376501 = undefined;
+    s.currentMillis___389413 = undefined;
     s.tmp_1 = game_currentScene__P361518_mk(s);
-    s.callLocIdx = 61; s.pc = 1; return s.tmp_1;
+    s.callLocIdx = 62; s.pc = 1; return s.tmp_1;
   case 1:
     r0 = s.retval;
     s.tmp_0 = r0;
     r0 = s.tmp_0.fields["_millis"];
-    s.currentMillis___376501 = (r0);
-    s.tmp_0 = clock_Clock_timeElasped__P376277_mk(s);
-    s.tmp_0.arg0 = globals.CLOCK_INSTANCE___376348;
-    s.tmp_0.arg1 = s.currentMillis___376501;
-    s.callLocIdx = 63; s.pc = 2; return s.tmp_0;
+    s.currentMillis___389413 = (r0);
+    s.tmp_0 = clock_Clock_timeElasped__P389182_mk(s);
+    s.tmp_0.arg0 = globals.CLOCK_INSTANCE___389271;
+    s.tmp_0.arg1 = s.currentMillis___389413;
+    s.callLocIdx = 64; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    s.tmp_0 = clock_drawClockImplement__P376413_mk(s);
-    s.callLocIdx = 64; s.pc = 3; return s.tmp_0;
+    s.tmp_0 = clock_drawClockImplement__P389325_mk(s);
+    s.callLocIdx = 65; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-clock_init_inline__P376500.info = {"start":3973,"length":181,"line":124,"column":12,"endLine":128,"endColumn":13,"fileName":"clock.ts","functionName":"inline","argumentNames":[]}
+clock_init_inline__P389412.info = {"start":3902,"length":181,"line":123,"column":12,"endLine":127,"endColumn":13,"fileName":"clock.ts","functionName":"inline","argumentNames":[]}
 
-function clock_init_inline__P376500_mk(s) {
+function clock_init_inline__P389412_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_init_inline__P376500, depth: s.depth + 1,
+        parent: s, fn: clock_init_inline__P389412, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  currentMillis___376501: undefined,
+  currentMillis___389413: undefined,
 } }
 
 
 
 
 
-function clock_drawClockImplement__P376413(s) {
+function clock_drawClockImplement__P389325(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1228,36 +1237,36 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.font___376415 = undefined;
-    s.smallFont___376417 = undefined;
-    s.clockIconShift___376419 = undefined;
-    s.width___376424 = undefined;
-    s.left___376431 = undefined;
-    s.color1___376439 = undefined;
-    s.color2___376440 = undefined;
-    r0 = pxsim_numops_toBoolDecr(clock_drawClockImplement__P376413);
+    s.font___389327 = undefined;
+    s.smallFont___389329 = undefined;
+    s.clockIconShift___389331 = undefined;
+    s.width___389336 = undefined;
+    s.left___389343 = undefined;
+    s.color1___389351 = undefined;
+    s.color2___389352 = undefined;
+    r0 = pxsim_numops_toBoolDecr(clock_drawClockImplement__P389325);
     if (!r0) { step = 5; continue; }
-    s.font___376415 = (globals.font8___360605);
-    s.smallFont___376417 = (globals.font5___360610);
-    r0 = pxsim_numops_toBoolDecr(globals.isDrawClockIcon___376352);
+    s.font___389327 = (globals.font8___360605);
+    s.smallFont___389329 = (globals.font5___360610);
+    r0 = pxsim_numops_toBoolDecr(globals.isDrawClockIcon___389275);
     if (!r0) { step = 1; continue; }
-    r0 = pxsim_ImageMethods.width(globals.clockIcon___376274);
+    r0 = pxsim_ImageMethods.width(globals.clockIcon___389179);
     { step = 2; continue; }
   case 1:
     r0 = 0;
   case 2:
     // jmp value (already in r0)
     s.tmp_0 = r0;
-    s.clockIconShift___376419 = (s.tmp_0);
+    s.clockIconShift___389331 = (s.tmp_0);
     s.tmp_3 = if_charWidth_1_mk(s);
-    s.tmp_3.arg0 = s.font___376415;
+    s.tmp_3.arg0 = s.font___389327;
     if (!s.tmp_3.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_3.arg0, "charWidth");
     } else {
       s.tmp_3.fn = s.tmp_3.arg0.vtable.iface["charWidth"];
       if (s.tmp_3.fn == null) { s.retval = s.tmp_3.arg0.fields["charWidth"]; }
       else if (!s.tmp_3.fn.isGetter) { s.retval = bind(s.tmp_3); }
-     else { s.callLocIdx = 53; s.pc = 7; return s.tmp_3; }
+     else { s.callLocIdx = 54; s.pc = 7; return s.tmp_3; }
     }
   case 7:
     r0 = s.retval;
@@ -1266,85 +1275,85 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = (s.tmp_1 - 2);
     s.tmp_0 = r0;
-    r0 = (s.tmp_0 + s.clockIconShift___376419);
-    s.width___376424 = (r0);
+    r0 = (s.tmp_0 + s.clockIconShift___389331);
+    s.width___389336 = (r0);
     r0 = pxsim_ImageMethods.width(globals.screen___360662);
     s.tmp_1 = r0;
     r0 = (s.tmp_1 >> 1);
     s.tmp_0 = r0;
-    r0 = (s.width___376424 >> 1);
+    r0 = (s.width___389336 >> 1);
     s.tmp_2 = r0;
     r0 = (s.tmp_0 - s.tmp_2);
-    s.left___376431 = (r0);
-    s.color1___376439 = (1);
-    s.color2___376440 = (3);
+    s.left___389343 = (r0);
+    s.color1___389351 = (1);
+    s.color2___389352 = (3);
     s.tmp_0 = helpers_imageFillRect__P360588_mk(s);
     s.tmp_0.arg0 = globals.screen___360662;
-    r0 = (s.left___376431 - 3);
+    r0 = (s.left___389343 - 3);
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = 0;
-    r0 = (s.width___376424 + 6);
+    r0 = (s.width___389336 + 6);
     s.tmp_0.arg3 = r0;
     s.tmp_2 = if_charHeight_1_mk(s);
-    s.tmp_2.arg0 = s.font___376415;
+    s.tmp_2.arg0 = s.font___389327;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "charHeight");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["charHeight"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["charHeight"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 54; s.pc = 9; return s.tmp_2; }
+     else { s.callLocIdx = 55; s.pc = 9; return s.tmp_2; }
     }
   case 9:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 + 3);
     s.tmp_0.arg4 = r0;
-    s.tmp_0.arg5 = s.color1___376439;
-    s.callLocIdx = 55; s.pc = 8; return s.tmp_0;
+    s.tmp_0.arg5 = s.color1___389351;
+    s.callLocIdx = 56; s.pc = 8; return s.tmp_0;
   case 8:
     r0 = s.retval;
     s.tmp_0 = helpers_imageFillRect__P360588_mk(s);
     s.tmp_0.arg0 = globals.screen___360662;
-    r0 = (s.left___376431 - 2);
+    r0 = (s.left___389343 - 2);
     s.tmp_0.arg1 = r0;
     s.tmp_0.arg2 = 0;
-    r0 = (s.width___376424 + 4);
+    r0 = (s.width___389336 + 4);
     s.tmp_0.arg3 = r0;
     s.tmp_2 = if_charHeight_1_mk(s);
-    s.tmp_2.arg0 = s.font___376415;
+    s.tmp_2.arg0 = s.font___389327;
     if (!s.tmp_2.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapGetByString(s.tmp_2.arg0, "charHeight");
     } else {
       s.tmp_2.fn = s.tmp_2.arg0.vtable.iface["charHeight"];
       if (s.tmp_2.fn == null) { s.retval = s.tmp_2.arg0.fields["charHeight"]; }
       else if (!s.tmp_2.fn.isGetter) { s.retval = bind(s.tmp_2); }
-     else { s.callLocIdx = 56; s.pc = 11; return s.tmp_2; }
+     else { s.callLocIdx = 57; s.pc = 11; return s.tmp_2; }
     }
   case 11:
     r0 = s.retval;
     s.tmp_1 = r0;
     r0 = (s.tmp_1 + 2);
     s.tmp_0.arg4 = r0;
-    s.tmp_0.arg5 = s.color2___376440;
-    s.callLocIdx = 57; s.pc = 10; return s.tmp_0;
+    s.tmp_0.arg5 = s.color2___389352;
+    s.callLocIdx = 58; s.pc = 10; return s.tmp_0;
   case 10:
     r0 = s.retval;
-    r0 = pxsim_numops_toBoolDecr(clock_drawClockIcon__P376371);
+    r0 = pxsim_numops_toBoolDecr(clock_drawClockIcon__P389286);
     if (!r0) { step = 3; continue; }
     s.tmp_0 = r0 = globals.screen___360662;
-    s.tmp_1 = r0 = globals.clockIcon___376274;
-    r0 = (s.left___376431 - 1);
+    s.tmp_1 = r0 = globals.clockIcon___389179;
+    r0 = (s.left___389343 - 1);
     s.tmp_2 = r0;
     r0 = pxsim_ImageMethods.drawTransparentImage(s.tmp_0, s.tmp_1, s.tmp_2, 1);
   case 3:
   case 4:
     s.tmp_0 = helpers_imagePrint__P360620_mk(s);
     s.tmp_0.arg0 = globals.screen___360662;
-    s.tmp_5 = clock_formatDecimal__P376398_mk(s);
-    r0 = globals.CLOCK_INSTANCE___376348.fields["hour"];
+    s.tmp_5 = clock_formatDecimal__P389310_mk(s);
+    r0 = globals.CLOCK_INSTANCE___389271.fields["hour"];
     s.tmp_5.arg0 = r0;
-    s.callLocIdx = 58; s.pc = 13; return s.tmp_5;
+    s.callLocIdx = 59; s.pc = 13; return s.tmp_5;
   case 13:
     r0 = s.retval;
     s.tmp_4 = r0;
@@ -1368,10 +1377,10 @@ switch (step) {
   case 15:
     r0 = s.retval;
     s.tmp_1 = r0;
-    s.tmp_8 = clock_formatDecimal__P376398_mk(s);
-    r0 = globals.CLOCK_INSTANCE___376348.fields["minute"];
+    s.tmp_8 = clock_formatDecimal__P389310_mk(s);
+    r0 = globals.CLOCK_INSTANCE___389271.fields["minute"];
     s.tmp_8.arg0 = r0;
-    s.callLocIdx = 59; s.pc = 16; return s.tmp_8;
+    s.callLocIdx = 60; s.pc = 16; return s.tmp_8;
   case 16:
     r0 = s.retval;
     s.tmp_7 = r0;
@@ -1386,13 +1395,13 @@ switch (step) {
     s.tmp_6 = r0;
     r0 = pxsim_String__concat(s.tmp_1, s.tmp_6);
     s.tmp_0.arg1 = r0;
-    r0 = (s.left___376431 + s.clockIconShift___376419);
+    r0 = (s.left___389343 + s.clockIconShift___389331);
     s.tmp_0.arg2 = r0;
     s.tmp_0.arg3 = 1;
-    s.tmp_0.arg4 = s.color1___376439;
-    s.tmp_0.arg5 = s.font___376415;
+    s.tmp_0.arg4 = s.color1___389351;
+    s.tmp_0.arg5 = s.font___389327;
     s.tmp_0.arg6 = undefined;
-    s.callLocIdx = 60; s.pc = 12; return s.tmp_0;
+    s.callLocIdx = 61; s.pc = 12; return s.tmp_0;
   case 12:
     r0 = s.retval;
   case 5:
@@ -1401,12 +1410,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-clock_drawClockImplement__P376413.info = {"start":2977,"length":845,"line":97,"column":4,"endLine":117,"endColumn":5,"fileName":"clock.ts","functionName":"drawClockImplement","argumentNames":[]}
+clock_drawClockImplement__P389325.info = {"start":2906,"length":845,"line":96,"column":4,"endLine":116,"endColumn":5,"fileName":"clock.ts","functionName":"drawClockImplement","argumentNames":[]}
 
-function clock_drawClockImplement__P376413_mk(s) {
+function clock_drawClockImplement__P389325_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_drawClockImplement__P376413, depth: s.depth + 1,
+        parent: s, fn: clock_drawClockImplement__P389325, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1417,20 +1426,20 @@ function clock_drawClockImplement__P376413_mk(s) {
   tmp_6: undefined,
   tmp_7: undefined,
   tmp_8: undefined,
-  font___376415: undefined,
-  smallFont___376417: undefined,
-  clockIconShift___376419: undefined,
-  width___376424: undefined,
-  left___376431: undefined,
-  color1___376439: undefined,
-  color2___376440: undefined,
+  font___389327: undefined,
+  smallFont___389329: undefined,
+  clockIconShift___389331: undefined,
+  width___389336: undefined,
+  left___389343: undefined,
+  color1___389351: undefined,
+  color2___389352: undefined,
 } }
 
 
 
 
 
-function clock_formatDecimal__P376398(s) {
+function clock_formatDecimal__P389310(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1468,12 +1477,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-clock_formatDecimal__P376398.info = {"start":2815,"length":156,"line":89,"column":4,"endLine":95,"endColumn":5,"fileName":"clock.ts","functionName":"formatDecimal","argumentNames":["val"]}
+clock_formatDecimal__P389310.info = {"start":2744,"length":156,"line":88,"column":4,"endLine":94,"endColumn":5,"fileName":"clock.ts","functionName":"formatDecimal","argumentNames":["val"]}
 
-function clock_formatDecimal__P376398_mk(s) {
+function clock_formatDecimal__P389310_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_formatDecimal__P376398, depth: s.depth + 1,
+        parent: s, fn: clock_formatDecimal__P389310, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2309,7 +2318,7 @@ function Math_max__P358963_mk(s) {
 
 
 
-function clock_drawClockIcon__P376371(s) {
+function clock_drawClockIcon__P389286(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2323,17 +2332,17 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    globals.isDrawClockIcon___376352 = (s.arg0);
+    globals.isDrawClockIcon___389275 = (s.arg0);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-clock_drawClockIcon__P376371.info = {"start":2154,"length":79,"line":71,"column":4,"endLine":73,"endColumn":5,"fileName":"clock.ts","functionName":"drawClockIcon","argumentNames":["on"]}
+clock_drawClockIcon__P389286.info = {"start":2112,"length":79,"line":69,"column":4,"endLine":71,"endColumn":5,"fileName":"clock.ts","functionName":"drawClockIcon","argumentNames":["on"]}
 
-function clock_drawClockIcon__P376371_mk(s) {
+function clock_drawClockIcon__P389286_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_drawClockIcon__P376371, depth: s.depth + 1,
+        parent: s, fn: clock_drawClockIcon__P389286, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
 } }
@@ -2405,7 +2414,7 @@ function helpers_imageFillRect__P360588_mk(s) {
 
 
 
-function clock_Clock_timeElasped__P376277(s) {
+function clock_Clock_timeElasped__P389182(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2415,58 +2424,64 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.deltaMillis___376316 = undefined;
+    s.deltaMillis___389229 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, clock_Clock__C376276_VT)) failedCast(r0);
+    if (!checkSubtype(r0, clock_Clock__C389181_VT)) failedCast(r0);
     r0 = s.arg0.fields["setTimeMillis"];
     s.tmp_0 = r0;
     r0 = (s.arg1 - s.tmp_0);
-    s.deltaMillis___376316 = (r0);
+    s.deltaMillis___389229 = (r0);
     s.tmp_0 = r0 = s.arg0;
     r0 = s.arg0.fields["setTimeMinutes"];
     s.tmp_2 = r0;
-    r0 = (s.deltaMillis___376316 * 60);
-    s.tmp_4 = r0;
     r0 = s.arg0.fields["tickInterval"];
     s.tmp_5 = r0;
-    r0 = (s.tmp_4 / s.tmp_5);
+    r0 = (s.deltaMillis___389229 / s.tmp_5);
+    s.tmp_4 = r0;
+    r0 = (s.tmp_4 * 60);
     s.tmp_3 = r0;
     r0 = (s.tmp_2 + s.tmp_3);
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["currentTimeMinutes"] = (s.tmp_1);
     s.tmp_0 = r0 = s.arg0;
-    r0 = s.tmp_0.fields["currentTimeMinutes"];
+    r0 = s.arg0.fields["currentTimeMinutes"];
+    s.tmp_3 = r0;
+    r0 = (s.tmp_3 + 1440);
     s.tmp_2 = r0;
     r0 = (s.tmp_2 % 1440);
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["currentTimeMinutes"] = (s.tmp_1);
     s.tmp_0 = r0 = s.arg0;
     r0 = s.arg0.fields["currentTimeMinutes"];
+    s.tmp_3 = r0;
+    r0 = (s.tmp_3 / 60);
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 / 60);
+    r0 = pxsim.Math_.floor(s.tmp_2);
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["hour"] = (s.tmp_1);
     s.tmp_0 = r0 = s.arg0;
     r0 = s.arg0.fields["currentTimeMinutes"];
+    s.tmp_3 = r0;
+    r0 = (s.tmp_3 % 60);
     s.tmp_2 = r0;
-    r0 = (s.tmp_2 % 60);
+    r0 = pxsim.Math_.floor(s.tmp_2);
     s.tmp_1 = r0;
     r0 = (s.tmp_0).fields["minute"] = (s.tmp_1);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-clock_Clock_timeElasped__P376277.info = {"start":909,"length":363,"line":36,"column":8,"endLine":42,"endColumn":9,"fileName":"clock.ts","functionName":"timeElasped","argumentNames":["this","currentMillis"]}
+clock_Clock_timeElasped__P389182.info = {"start":933,"length":425,"line":36,"column":8,"endLine":42,"endColumn":9,"fileName":"clock.ts","functionName":"timeElasped","argumentNames":["this","currentMillis"]}
 
-function clock_Clock_timeElasped__P376277_mk(s) {
+function clock_Clock_timeElasped__P389182_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_Clock_timeElasped__P376277, depth: s.depth + 1,
+        parent: s, fn: clock_Clock_timeElasped__P389182, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2474,7 +2489,7 @@ function clock_Clock_timeElasped__P376277_mk(s) {
   tmp_3: undefined,
   tmp_4: undefined,
   tmp_5: undefined,
-  deltaMillis___376316: undefined,
+  deltaMillis___389229: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -2866,7 +2881,7 @@ function sprites_BaseSprite_z__P360725_mk(s) {
 
 
 
-function clock_Clock_constructor__P376278(s) {
+function clock_Clock_constructor__P389183(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2884,9 +2899,19 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, clock_Clock__C376276_VT)) failedCast(r0);
-    r0 = (s.arg0).fields["hour"] = (s.arg1);
-    r0 = (s.arg0).fields["minute"] = (s.arg2);
+    if (!checkSubtype(r0, clock_Clock__C389181_VT)) failedCast(r0);
+    s.tmp_0 = r0 = s.arg0;
+    r0 = (s.arg1 + 24);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_2 % 24);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_0).fields["hour"] = (s.tmp_1);
+    s.tmp_0 = r0 = s.arg0;
+    r0 = (s.arg2 + 60);
+    s.tmp_2 = r0;
+    r0 = (s.tmp_2 % 60);
+    s.tmp_1 = r0;
+    r0 = (s.tmp_0).fields["minute"] = (s.tmp_1);
     r0 = (s.arg0).fields["tickInterval"] = (s.arg3);
     s.tmp_0 = r0 = s.arg0;
     r0 = s.arg0.fields["hour"];
@@ -2914,12 +2939,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-clock_Clock_constructor__P376278.info = {"start":528,"length":371,"line":25,"column":8,"endLine":34,"endColumn":9,"fileName":"clock.ts","functionName":"inline","argumentNames":["this","hour","minute","tickInterval"]}
+clock_Clock_constructor__P389183.info = {"start":528,"length":395,"line":25,"column":8,"endLine":34,"endColumn":9,"fileName":"clock.ts","functionName":"inline","argumentNames":["this","hour","minute","tickInterval"]}
 
-function clock_Clock_constructor__P376278_mk(s) {
+function clock_Clock_constructor__P389183_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: clock_Clock_constructor__P376278, depth: s.depth + 1,
+        parent: s, fn: clock_Clock_constructor__P389183, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -40187,7 +40212,7 @@ const Math_FastRandom__C361573_VT = mkVTable({
     "pickRandom": Math_FastRandom_pickRandom__P361578,
   },
 });
-const clock_Clock__C376276_VT = mkVTable({
+const clock_Clock__C389181_VT = mkVTable({
   name: "Clock",
   numFields: 6,
   classNo: 19,
@@ -40208,7 +40233,7 @@ const clock_Clock__C376276_VT = mkVTable({
     "set/setTimeMillis": null,
     "setTimeMinutes": null,
     "set/setTimeMinutes": null,
-    "timeElasped": clock_Clock_timeElasped__P376277,
+    "timeElasped": clock_Clock_timeElasped__P389182,
   },
 });
 const scene_Scene__C361404_VT = mkVTable({
@@ -41397,7 +41422,7 @@ const sprites_BaseSpriteSayRenderer__C360881_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["clockIcon___376274","CLOCK_INSTANCE___376348","isDrawClock___376350","isDrawClockIcon___376352"])
+const breakpoints = setupDebugger(1, ["clockIcon___389179","CLOCK_INSTANCE___389271","isDrawClock___389273","isDrawClockIcon___389275"])
 
-return _main___P376581
+return _main___P389488
 })
